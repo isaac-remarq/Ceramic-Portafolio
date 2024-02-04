@@ -1,0 +1,1133 @@
+/* -----------------Main---------------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e8e8e8;
+    margin: 0 2.5% 0 2.5%;
+}
+
+tr td{
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* -----------------Header---------------------------- */
+
+
+#header {
+    margin: 2.5% 2.5% 2.5% 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 90vh;
+    border-radius: 40px;
+    margin-bottom: 5vw;
+}
+
+.table0 {
+    height: 90vh;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+}
+
+video {
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-text0 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.overlay-button0 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10px, -18px);
+    font-weight: bold;
+    text-align: left;
+}
+
+.overlay-button0 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    padding: 18px 26px;
+    font-size: 0.7vw;
+    background-color: white;
+    border: none;
+    border-radius: 40px; 
+}
+
+/* -----------------Home---------------------------- */
+
+
+#home {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-grow: 1;
+    height: 150vh;
+    margin-top: 0;
+    margin-bottom: 5vw;
+}
+
+.table2 {
+    width: 78%;
+    height: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 2vw;
+}
+
+.table3 {
+    width: 25%;
+    height: 100%;
+    border-collapse: separate;
+    border-spacing: 0 2vw;
+    margin-right: 2vw;
+}
+
+/* Cell spacing */
+
+.cell1, .cell2 {
+    width: 33.33%;
+    height: 10vw;
+}
+
+.cell4, .cell5 {
+    height: 12.5vw;
+}
+
+.cell3 {
+    height: 20vw;
+}
+
+.cell6 {
+    height: 10.5vw;
+}
+
+.cell10 {
+    height: 6.3vw;
+}
+
+.cell7, .cell8, .cell9 {
+    height: 7.5vw;
+}
+
+/* CELL General Style */
+
+.cell1, .cell2, .cell4, .cell6, .cell7, .cell8, .cell9, .cell10 {
+    background-color: #f8f8f8;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.cell3, .cell5 {
+    background-color: #D9D0E9;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.cell1, .cell2, .cell4,.cell6, .cell7, .cell8, .cell9, .cell10 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+   
+}
+
+/* CELL 1 */
+
+.cell1 {
+    z-index: 0;
+    position: relative;
+    overflow: hidden; 
+}
+
+.cell1 .background-image1 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/image1.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+}
+
+.cell1:hover .background-image1 {
+    filter: blur(12px);
+}
+
+.image-container1 {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5vw;
+    font-weight: bol;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%; 
+}
+
+/* CELL 2 */
+
+.cell2{
+    background-color: #857DAA;
+
+}
+
+.image-container2 {
+    z-index: 2;
+    position: relative;
+    width: 100%;        
+    height: 100%;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text2  {
+    font-size: 5vw;
+    font-weight: bold; 
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+
+/* CELL 3 */
+
+
+iframe {
+    
+    border-radius: 40px;
+}
+
+.image-container3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-button3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10px, -18px);
+    font-weight: bold;
+    text-align: left;
+}
+
+.overlay-button3 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    padding: 18px 26px;
+    font-size: 0.7vw;
+    background-color: white;
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer; 
+}
+
+.overlay-button3 button:hover {
+    background-color: whitesmoke;
+}
+
+/* CELL 4 */
+
+.cell4{
+    background-color: #857DAA;
+}
+
+.overlay-text4  {
+    text-align: center;
+    font-size: 2vw;
+    color: white;
+    margin: 0 15% 0 15%;
+}
+
+/* CELL 5 */
+
+iframe {
+    border-radius: 40px;
+}
+
+.image-container5 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-text5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.overlay-button5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-10px, -18px);
+    font-weight: bold;
+    text-align: left;
+}
+
+.overlay-button5 button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    padding: 18px 26px;
+    font-size: 0.7vw;
+    background-color: white;
+    border: none;
+    border-radius: 40px; 
+    cursor: pointer; 
+}
+
+.overlay-button5 button:hover {
+    background-color: whitesmoke;
+}
+
+/* CELL 6 */
+
+.cell6{
+    background-image: url(images/image2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-text6  {
+    font-size: 2vw;
+    font-weight: bold; 
+    color: white;
+    margin: 0 15% 0 15%;
+}
+
+/* CELL 7 */
+
+.cell7{
+    background-color: #f8f8f8;
+}
+
+.overlay-text7 {
+    font-size: 4vw;
+    font-weight: bold; 
+    color: #857DAA;
+    margin: 0 15% 0 15%;
+}
+
+/* CELL 8 */
+
+.cell8{
+    background-image: url(images/image2.png);
+    background-position: center;
+}
+
+.overlay-text8 {
+    font-size: 1.5vw;
+    font-weight: bold; 
+    color: white;
+    margin: 0 15% 0 15%;
+}
+
+/* CELL 9 */
+
+.cell9{
+    background-color: #D9D0E9;
+}
+
+
+.overlay-text9 {
+    font-size: 1.5vw;
+    font-weight: bold; 
+    color: #857DAA;
+    margin: 0 15% 0 15%;
+}
+
+/* CELL 10 */
+
+.cell10{
+    background-color: #857DAA;
+}
+
+.overlay-text10 {
+    font-size: 1.5vw;
+    font-weight: bold; 
+    color: white;
+    margin: 0 15% 0 15%;
+}
+
+
+/* -----------------Events---------------------------- */
+
+
+/* table spacing */
+
+#events {
+    margin: 0 2.5% 0 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100vh;
+    background-color: #857DAA;
+    border-radius: 40px;
+    margin-bottom: 5vw;
+}
+
+.table4 {
+    margin: 0 2.5% 4% 2.5%;
+    width: 100%;
+    height: 100vh;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 2vw;
+}
+
+/* CELL General Style */
+
+
+.event{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 40vw;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.event-title {
+    padding-top: 2vw;
+    height: 2vw;
+    font-size: 3vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+}
+
+/* Containers */
+
+.event {
+    z-index: 0;
+    position: relative;
+    overflow: hidden; 
+
+}
+
+.event-background-image1 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/event01.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+.event:hover .event-background-image1 {
+    filter: blur(12px);
+  }
+
+.event-background-image2 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/event02.jpg) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+.event:hover .event-background-image2 {
+    filter: blur(12px);
+  }
+
+.event-background-image3 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/event03.jpg) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+.event:hover .event-background-image3 {
+    filter: blur(12px);
+  }
+
+
+.event-image-container {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.event-overlay-text {
+    position: absolute;
+    width: 100%; 
+}
+
+/* -----------------Catalog---------------------------- */
+
+
+/* table spacing */
+
+#catalog {
+    margin-bottom: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.table5 {
+    width: 100%;
+    height: 100vh;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 2vw;
+}
+
+tr td{
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* CELL General Style */
+
+
+.cell{
+    font-family: 'Montserrat', sans-serif;
+    color: #857DAA;
+    font-size: 1.5vw;
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.cell0 {
+    font-size: 3vw;
+    height: 1vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #857DAA;
+    background-color: transparent;
+}
+
+/* Containers */
+
+.cell {
+    z-index: 0;
+    position: relative;
+    overflow: hidden; 
+}
+
+.image-container {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%; 
+}
+
+/* Images */
+
+.background-image1 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product1.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+  .cell:hover .background-image1 {
+    filter: blur(12px);
+  }
+
+  .background-image2 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product2.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image2 {
+    filter: blur(12px);
+  }
+
+  .background-image3 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product3.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image3 {
+    filter: blur(12px);
+  }
+
+  .background-image4 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product4.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+   .cell:hover .background-image4 {
+    filter: blur(12px);
+  }
+
+  .background-image5 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product5.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+  .cell:hover .background-image5 {
+    filter: blur(12px);
+  }
+
+  .background-image6 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product6.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image6 {
+    filter: blur(12px);
+  }
+
+  .background-image7 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product7.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+   .cell:hover .background-image7 {
+    filter: blur(12px);
+  }
+
+  .background-image-special {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product8.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image-special {
+    filter: blur(12px);
+  }
+
+  .background-image9 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product9.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image9 {
+    filter: blur(12px);
+  }
+
+  .background-image10 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product10.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+   .cell:hover .background-image10 {
+    filter: blur(12px);
+  }
+
+  .background-image11 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product11.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image11 {
+    filter: blur(12px);
+  }
+
+  .background-image12 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product12.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image12 {
+    filter: blur(12px);
+  }
+
+  .background-image13 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product13.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+   .cell:hover .background-image13 {
+    filter: blur(12px);
+  }
+
+  .background-image14 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product14.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image14 {
+    filter: blur(12px);
+  }
+
+  .background-image15 {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    display: block;
+    background: url(images/product15.png) center/cover;
+    transition: filter 0.5s;
+    overflow: hidden;
+  }
+
+    .cell:hover .background-image15 {
+    filter: blur(12px);
+  }
+
+
+/* -----------------Contact---------------------------- */
+
+#contact {
+    margin-bottom: 2.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 85vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #857DAA;
+    border-radius: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2vw;
+  }
+  
+  .input-group {
+    margin-bottom: 2vw;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5vw;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    font-size: 2vw;
+    color: #636363;
+    width: 82vw;
+    padding: 2vw;
+    border: none;
+    border-radius: 40px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #857DAA; 
+    outline: none; 
+    box-shadow: 0 0 10px rgba(133, 125, 170, 0.7); 
+  }
+  
+  #name, #message, #mail {
+    margin-bottom: 2vw;
+  }
+  
+  #message {
+    padding-left: 30px;
+    color: #636363;
+    height: 10vw;
+    width: 82vw;
+    border: none;
+    border-radius: 40px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: #857DAA;
+    color: #e8e8e8;
+    padding: 1.5vw 3vw;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 0.5vw;
+  }
+  
+  label{
+    margin-left: 1vw;
+  }
+
+/* -----------------Media Query---------------------------- */
+
+/* -----------------Main---------------------------- */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+/* -----------------Header---------------------------- */
+
+#header {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.table0 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.table0 video {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0 0 40px 40px;
+    object-fit: cover; 
+}
+
+.overlay-text0 {
+    font-size: 70px;
+}
+
+
+    /* -----------------Home---------------------------- */
+    #home {
+        flex-direction: column; 
+        height: 1750px;
+        margin: 0;
+        margin-top: -20px;
+    }
+
+    .table2,
+    .table3 {
+        display: flex; 
+        width: 100%;
+        border-spacing: 10px 20px;
+    }
+
+    .table3{
+        margin-top: -18px;
+    }
+
+    .cell1,
+    .cell2,
+    .cell4,
+    .cell8,
+    .cell9 {
+        display: none;
+    }
+
+    .cell5 {
+        height: 400px;
+        width: 400px;
+    }
+
+    .overlay-text5 {
+      font-size: 70px;;
+    }
+
+    .overlay-button5 button {
+        padding: 18px 26px;
+        font-size: 10px;
+    }
+
+    .cell7 {
+        background-color: #857DAA;
+        height: 150px;
+        width: 450px;
+    }
+
+    .overlay-text7 {
+        font-size: 70px;
+        color: white;
+    }
+
+    .cell3 {
+        height: 600px;
+        width: 400px;
+    }
+
+    .overlay-button3 button {
+        padding: 18px 26px;
+        font-size: 10px;
+    }
+
+    .cell6 {
+        height: 300px;
+        width: 400px;
+    }
+
+    .overlay-text6 {
+      font-size: 25px;
+    }
+
+    .cell10 {
+        height: 150px;
+        width: 400px;
+    }
+
+    .overlay-text10 {
+        font-size: 25px;
+    }
+
+    /* -----------------Events---------------------------- */
+    #events {
+      height: auto; 
+      width: 90%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      margin: 0 auto; 
+    }
+
+    .table4 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-spacing: 0 5% 0 5%;
+        justify-content: center; 
+        padding-bottom: 10px;
+    }
+
+    .event-title {
+        font-size: 35px; 
+        height: auto; 
+    }
+
+    #event3 {
+        width: 275px;
+        height: 600px; 
+    }
+
+    #event3 .event-overlay-text {
+        font-size: 16px;
+    }
+
+    
+    #event1,
+    #event2 {
+      width: 0%;
+      display: none;
+    }
+    
+  
+    
+    /* -----------------Catalog---------------------------- */
+
+      #catalog {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin: 10px 0 0 0;
+      }
+      
+      .table5 {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-spacing: 0 5% 0 5%;
+        justify-content: center; 
+      }
+      
+      .cell0 {
+        font-size: 40px;
+        height: 20px;
+      }
+      
+      #product4, #product5, #product3,
+      #product9, #product10, #product8,
+      #product14, #product15, #product13{
+        width: 0%;
+        display: none;
+      }
+      
+      #product1, #product2, 
+      #product6, #product7,
+      #product11, #product12{
+        width: 175px;
+        height: 175px;
+      }
+  
+      /* -----------------Contact---------------------------- */
+
+    #contact {
+        height: 650px; 
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        margin: 0 auto; 
+    }
+
+    .container {
+        padding-top: 15px; 
+        padding-bottom: 15px; 
+        width: 90%; 
+        height: auto; 
+        margin-bottom: -8px;
+    }
+
+    .input-group {
+        margin-bottom: 15px; 
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px; 
+        font-size: 30px;
+        margin-left: 15px; 
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        margin-left: 5px;
+        height: 80px; 
+        font-size: 30px; 
+        width: 95%; 
+        padding: 10px; 
+        border-radius: 30px; 
+    }
+
+    #name, #message, #mail {
+        margin-bottom: 10px; 
+    }
+
+    #message {
+        height: 160px; 
+        width: 95%; 
+        border: none;
+        border-radius: 30px; 
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-left: 10px;
+        margin-top: 10px ;
+        font-size: 30px; 
+        padding: 20px 40px; 
+    }
+
+}
